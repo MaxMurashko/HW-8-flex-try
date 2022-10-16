@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+html, body {
+    margin: 0 auto;
+    background-size: 100% 100%;
+    min-height: 100%;
+    font-size: 16px;
+    font-family: Gilroy;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 90rem;
+}
+
+.top-part {
+    background-color: white;
+}
+.about-me-part {
+    background-color: #F6F6F6;
+    text-align: center;
+}
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-block a {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #828282;
+}
+.nav-block a:hover {
+    color: #070707;
+}
+hr {
+    margin-top: 2rem;
+}
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 4rem;
+    min-width: 18rem;
+    align-items: center;
+}
+.info-block h3 {
+    margin: 0;
+    font-size: 3rem;
+    max-width: 7.7rem;
+    line-height: 3.6rem;
+}
+.info-block p {
+    margin: 0;
+    padding-top: 3rem;
+    font-weight: 500;
+    max-width: 9rem;
+    line-height: 1.36rem;
+    letter-spacing: 1px;
+}   
+.lng-btns {
+    display: flex;
+    padding-top: 4rem;
+    padding-right: 1rem;
+    transform: rotate(-90deg);
+}
+.ru-btn {
+    border: none;
+    background: transparent;
+    border-right: 1px solid black;
+    color: #828282;
+    font-weight: 700;
+}
+.eng-btn {
+    border: none;
+    border-left:  1px solid black; 
+    background: transparent;
+    color: #828282;
+    font-weight: 700;
+}
+.ru-btn:hover {
+    cursor: pointer;
+    color: black;
+}
+.eng-btn:hover {
+    cursor: pointer;
+    color: black;
+}
+.portrait {
+    padding-top: 3rem;
+    padding-bottom: 6.5rem;
+}
+.portrait img{
+    width: 100%;
+}
+.portrait-mob {
+    padding-top: 3rem;
+    padding-bottom: 6.5rem;
+}
+.portrait-mob img{
+    width: 100%;
+}
+.about-me-content {
+    margin: 0 auto;
+    width: 36%;
+    min-width: 18rem;
+    padding-top: 7.5rem;
+    padding-bottom: 6.7rem;
+}
+.about-me-content h3 {
+    margin: 0;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+}
+.about-me-content p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.12rem;
+    line-height: 1.36rem;
+    font-weight: 500;
+}
+.my-skills h3 {
+    padding-top: 4.31rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 2.63rem;
+}
+.my-skills p {
+    margin-top: 0;
+    margin-bottom: 5.1rem ;
+    line-height: 1.36rem;
+    font-weight: 500;
+}
+.programs-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+    line-height: 1rem;
+}
+.programs-blocks h3 {
+    margin: 0;
+    color: #828282;   
+    font-size: 0.87rem;
+    text-transform: capitalize;
+}
+.programs-blocks p {
+    margin-bottom: 4rem;
+    font-size: 1.2rem; 
+    font-weight: 700;
+}
+.programs-blocks img {
+    margin-bottom: 1rem;
+}
+.skills-part {
+    background-color: white;
+    text-align: center;
+}
+.pht-shp img {
+    background-color: #0a0a2a
+}
+.adobe-illt img {
+    background-color: #561902;
+}
+.adobe-aft-efcs img {
+    background-color: #320332;
+}
+.figma img {
+    width: 7.5rem;
+    height: 5.5rem;
+}
+ul {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: .5rem;
+    list-style-type: none;
+    padding: .3rem;
+}
+.menu-imit {
+    position: absolute;
+    top: 5rem;
+    right: .5rem;
+    padding: .3rem;
+    width: 4rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+}
+.menu-imit:focus + ul {
+    display: block;
+}
+ul li {
+    margin-top: .5rem;
+}
+ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #828282;
+}
+ul a:hover {
+    text-decoration: underline;
+}
+
+@media  screen and (min-width: 601px) {
+    .nav-block {
+        display: flex;
+    }
+    hr, .portrait{
+        display: block;
+    }
+    .menu-imit, .portrait-mob{
+        display: none;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .nav-block, hr, .portrait, .lng-btns {
+        display: none;
+    }
+    .portrait-mob {
+        display: block; 
+    }
+    .info-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .programs-blocks {
+        flex-direction: column;
+    }  
+    .info-block p {
+        padding-top: 2rem;
+    }
+}
