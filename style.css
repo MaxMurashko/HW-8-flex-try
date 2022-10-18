@@ -97,9 +97,11 @@ hr {
     font-weight: 700;
 }
 .ru-btn:hover {
+    cursor: pointer;
     color: black;
 }
 .eng-btn:hover {
+    cursor: pointer;
     color: black;
 }
 .portrait {
